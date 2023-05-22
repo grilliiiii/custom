@@ -1,9 +1,9 @@
 name: Deploy
 
 on:
-#   push:
-#     branches:
-#       - docusaurus-version
+  push:
+    branches:
+      - master
       
 #     paths-ignore:
 #       - "ISSUE_TEMPLATE/**"
