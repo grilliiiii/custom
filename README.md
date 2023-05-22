@@ -4,7 +4,7 @@
 
 Seeed Studio has dedicated to realizing interactive digital replica of our physical world, as being an IoT hardware partner since 2008. This is an open platform collecting all the wikis published by Seeed Studio, to show you the full picture of our efforts, natural environments digitization and outcome production.
 
-This is the Github source files for Seeed Studio.
+This is the Github source files for Seeed Studio
 
 You can constantly receive updated data from sensors and sensors network, access computational resources with different edge computing power, display and manage information on cloud and chain in ways.
 
