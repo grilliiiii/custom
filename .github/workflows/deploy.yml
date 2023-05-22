@@ -1,84 +1,42 @@
-name: Deploy
+name: Deploy to GitHub Pages
 
 on:
-#   push:
-#     branches:
-#       - docusaurus-version
-      
-#     paths-ignore:
-#       - "ISSUE_TEMPLATE/**"
-#       - ".github/**.md"
-#       - ".gitignore"
-#       - "demo/**"
-#       - "docker/**"
-#       - "HOW_TO.md"
-#       - "TASK.md"
-#       - "SECURITY.md"
-#       - "README.md"
-#       - "README_zh-CN.md"
-      
-  schedule:
-    #UTC 0 
-    - cron: '0 0 10 3 *'
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
 
 jobs:
-  lint:
-    name: test_ci
+  test-deploy:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1.0.0
-
-      - name: Checkout
-        uses: actions/checkout@master
-        
-      - name: INSTALL SSH KEY
-        uses: shimataro/ssh-key-action@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          key: ${{ secrets.WIKI_TOKEN }} 
-          known_hosts: 'just-a-placeholder-so-we-dont-get-errors'
-
-      - name: GIT CLONE
+          node-version: 18
+          cache: yarn
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Test build website
+        run: yarn build
+  deploy:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
+      - uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.WIKI_TOKEN }}
+      - name: Deploy to GitHub Pages
+        env:
+          USE_SSH: true
         run: |
-            sudo apt-get update
-            sudo apt-get install \
-                  git -y 
-            git config --global user.name 'MatthewJeffson'
-            git config --global user.email '2768073931@qq.com'
-            git clone git@github.com:MatthewJeffson/custom.git
-            
-      - name: NPM RUN for HTML BUILD
-        run: |
-            curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-            echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-            cd  ~/wiki-documents
-            sudo apt remove cmdtest
-            sudo apt update && sudo apt install yarn
-            yarn add docusaurus
-            yarn add @docusaurus/theme-mermaid
-            yarn add remark-math@3 rehype-katex@4
-            yarn add @docusaurus/theme-search-algolia
-            yarn add remark-math@3 rehype-katex@5 hast-util-is-element@1.1.0
-            yarn add @docusaurus/plugin-content-docs
-            yarn add @docusaurus/plugin-debug
-            yarn add @docusaurus/plugin-pwa
-            yarn add --dev @docusaurus/eslint-plugin
-            yarn add @docusaurus/theme-live-codeblock
-            yarn add docusaurus-plugin-image-zoom
-            yarn add docusaurus-plugin-sass
-            yarn build
-      
-      - name: PUBLISH to WEBSITE
-        run: |
-            cd  ~/wiki-documents/build
-            git init
-            git remote add github git@github.com:MatthewJeffson/custom.git
-            git checkout -b gh-pages
-            git add .
-            git commit -m "Update"
-            git push -u github HTML -f
-
-
-
-
-
-          
+          git config --global user.email "2768073931@qq.com"
+          git config --global user.name "MatthewJeffson"
+          yarn install --frozen-lockfile
+          yarn deploy
