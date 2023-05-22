@@ -13,7 +13,7 @@ Here you can find the task list offcially launched by Seeed Studio.
 Are you familiar with microcontrollers? Let see what you are capable of!
 
 ### Seeed Studio XIAOESP32C3
-
+1
 #### XIAO ESP32C3: Wi-Fi application
 
 The application direction is IoT, which uses XIAO ESP32 to connect Wi-Fi to manage devices in remote operation
