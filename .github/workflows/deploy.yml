@@ -26,10 +26,10 @@ jobs:
     name: test_ci
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1.0.0
+      - uses: actions/checkout@v3
 
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v3
         
       - name: INSTALL SSH KEY
         uses: shimataro/ssh-key-action@v2
