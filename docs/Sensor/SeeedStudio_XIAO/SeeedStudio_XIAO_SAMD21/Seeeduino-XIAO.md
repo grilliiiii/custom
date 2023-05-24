@@ -449,5 +449,6 @@ the max size of flash is 8KB the more information at the ATSAMD218A-MU datasheet
 
 ## Tech Support
 
-Please do not hesitate to submit the issue into our [forum](https://forum.seeedstudio.com/).
-<p style={{textAlign: 'center'}}><a href="https://www.seeedstudio.com/act-4.html?utm_source=wiki&utm_medium=wikibanner&utm_campaign=newproducts" target="_blank"><img src="https://files.seeedstudio.com/wiki/Wiki_Banner/new_product.jpg" /></a></p>
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a> <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
