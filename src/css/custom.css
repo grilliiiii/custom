@@ -365,3 +365,108 @@
   font-size:20px;
   margin-top: 10px;
 }
+
+.background {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1B3654;
+  color: white;
+  text-decoration: none;
+  padding: 1.5vw 3vw;
+  border-radius: 10px;
+  transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  width: 45%; /* 最小按钮宽度 */
+  height: 13vw; /* 最小按钮高度 */
+  text-align: center;
+}
+
+
+
+.background:hover {
+  background-color: green;
+  transform: scale(1.2);
+}
+
+.link1,
+.link2 {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.background::before {
+
+  color: white;
+  position: absolute;
+  width: 95%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.background:hover::before {
+  content: "";
+  font-size: 20px;
+}
+
+.background:hover .link1::after {
+  position: absolute;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.background:hover .link2::after {
+  content: "two";
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  width: 95%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.button2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1B3654;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out;
+  margin-left: 2em;
+  margin-right: 2em;
+  width: 45%; /* 最小按钮宽度 */
+  height: 13em; /* 最小按钮高度 */
+  text-align: center;
+}
+
+.button2:hover {
+  background-color: #D3D3D3;
+  transform: scale(1);
+  text-decoration: none;
+}
+
+.button2 .label2 {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: bold;
+  transition: font-size 0.4s ease-in-out;
+}
+
+.button2:hover .label2 {
+  font-size: 1rem;
+  color: #D3D3D3;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+}
+
