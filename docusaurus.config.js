@@ -265,7 +265,7 @@ const config = {
           // },
         ],
       },
-
+      hideOnScroll: true,
       footer: {
         style: 'dark',
         links: [
