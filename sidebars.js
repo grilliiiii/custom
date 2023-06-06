@@ -33,24 +33,13 @@ const sidebars = {
     //   id: 'Sensor_Network',
 
     // },
-
     {
-      type: 'html',
-      value: `
-    <style>
-      .sub_item {
-        width: 275px;
-        display:inline-block;
-        text-align:center;
-        font-size:20px;
-        margin-top: 10px;
-      }
-    </style>
-    <div style="width:100px;text-align:center"> 
-      <div class="sub_item"><strong> Sensing </strong></div>
-    </div>
-    `,
+      type: 'doc',
+      id: 'Sensor_Network',
+      label: "Sensing",
+      className: 'my-custom-link-class',
     },
+
 
     {
 
@@ -1750,23 +1739,11 @@ const sidebars = {
     //   id: 'Sensor_Network',
 
     // },
-
     {
-      type: 'html',
-      value: `
-    <style>
-      .sub_item {
-        width: 275px;
-        display:inline-block;
-        text-align:center;
-        font-size:20px;
-        margin-top: 10px;
-      }
-    </style>
-    <div style="width:100px;text-align:center"> 
-      <div class="sub_item"><strong> Network </strong></div>
-    </div>
-    `,
+      type: 'doc',
+      id: 'Sensor_Network',
+      label: "Network",
+      className: 'my-custom-link-class',
     },
 
     {
@@ -2043,6 +2020,12 @@ const sidebars = {
       ]
     },
 
+    {
+      type: 'doc',
+      id: 'Edge_Computing',
+      label: "Edge Computing",
+      className: 'my-custom-link-class',
+    },
 
     {
       type: 'html',
