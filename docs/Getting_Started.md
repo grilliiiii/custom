@@ -30,7 +30,7 @@ The wiki contents have been divided into **four topics** as shown on the top nav
 
 <div class="container2">
   <a href= "#" class="button2">
-    <span class="label2">SenseCAP Sensor Node<br /><font color={'1B3654'} size={"5"}>More industrial sensors in</font><br /><font color={'1B3654'} size={"4"}>“Sensor Network” topic</font><br /> SenseCAP Gateway<br /><a href="custom/Edge_Computing/#single-board-computer"><span><font color={'1B3654'} size={"3"}>  Development Board</font></span></a><font color={'1B3654'} size={"3"}> | </font><a href="custom/Edge_Computing/#device"><span><font color={'1B3654'} size={"3"}>Device </font></span></a></span>
+    <span class="label2">SenseCAP Sensor Node<br /><font color={'1B3654'} size={"5"}>More industrial sensors in</font><br /><font color={'1B3654'} size={"4"}>“Sensor Network” topic</font><br /> SenseCAP Gateway<br /><a href="#"><span><font color={'1B3654'} size={"3"}>  Development Board</font></span></a><font color={'1B3654'} size={"3"}> | </font><a href="#"><span><font color={'1B3654'} size={"3"}>Device </font></span></a></span>
   </a>
   <a class="button2">
     <span class="label2">More industrial sensors info in <br/> "Sensor Network" topic</span>
