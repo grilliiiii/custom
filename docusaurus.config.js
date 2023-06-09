@@ -1,23 +1,22 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const math = require('remark-math');
-const katex = require('rehype-katex');
+const lightCodeTheme = require('prism-react-renderer/themes/github')
+const darkCodeTheme = require('prism-react-renderer/themes/dracula')
+const math = require('remark-math')
+const katex = require('rehype-katex')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-
   title: 'Seeed Studio Wiki',
-  tagline: 'The Seeed Studio Files Management Platform, Opening up and Cooperation.',
+  tagline:
+    'The Seeed Studio Files Management Platform, Opening up and Cooperation.',
 
-  url: 'https://MatthewJeffson.github.io',
-  baseUrl: '/custom/',
+  url: 'https://wiki.seeedstudio.com',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/S.png',
-
 
   scripts: [
     // String format.
@@ -32,8 +31,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'MatthewJeffson', // Usually your GitHub org/user name.
-  projectName: 'custom', // Usually your repo name.
+  organizationName: 'Seeed-Studio', // Usually your GitHub org/user name.
+  projectName: 'wiki-documents', // Usually your repo name.
   trailingSlash: true,
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -59,7 +58,6 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-
           routeBasePath: '/',
 
           sidebarPath: require.resolve('./sidebars.js'),
@@ -98,18 +96,16 @@ const config = {
           anonymizeIP: true,
         },
 
-//         blog: {
-//           showReadingTime: true,
-//           // Please change this to your repo.
-//           // Remove this to remove the "edit this page" links.
-//           editUrl:
-//             'https://github.com/Seeed-Studio/wiki-documents/blob/docusaurus-version/',
-//         },
+        //         blog: {
+        //           showReadingTime: true,
+        //           // Please change this to your repo.
+        //           // Remove this to remove the "edit this page" links.
+        //           editUrl:
+        //             'https://github.com/Seeed-Studio/wiki-documents/blob/docusaurus-version/',
+        //         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-
-
       }),
     ],
   ],
@@ -144,15 +140,13 @@ const config = {
       },
     ],
     'docusaurus-plugin-image-zoom',
-    'docusaurus-plugin-sass'
+    'docusaurus-plugin-sass',
   ],
 
   themeConfig:
-
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 
     ({
-
       zoom: {
         selector: '.markdown :not(em) > img',
         background: {
@@ -161,7 +155,7 @@ const config = {
         },
         // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
         // https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom
-        config: {}
+        config: {},
       },
 
       colorMode: {
@@ -175,10 +169,8 @@ const config = {
         category: 'Q&A',
         categoryId: 'DIC_kwDOEh4Nt84CTIbM',
         theme: 'light_high_contrast',
-        darkTheme: 'dark_tritanopia'
+        darkTheme: 'dark_tritanopia',
       },
-
-
 
       docs: {
         sidebar: {
@@ -189,9 +181,10 @@ const config = {
         // title: 'My Site',
         logo: {
           alt: 'Seeed Studio',
-          src: 'https://files.seeedstudio.com/wiki/wiki-platform/SeeedStudio.png',
+          src:
+            'https://files.seeedstudio.com/wiki/wiki-platform/SeeedStudio.png',
           href: 'Getting_Started',
-          className: 'navbar_logo_items'
+          className: 'navbar_logo_items',
         },
         items: [
           {
@@ -199,35 +192,33 @@ const config = {
             docId: 'Getting_Started',
             position: 'left',
             label: 'Getting Started',
-            className: 'navbar_doc_items'
+            className: 'navbar_doc_items',
           },
           {
             type: 'doc',
             docId: 'Sensor_Network',
             position: 'left',
-            label: 'Sensing',
-            className: 'navbar_doc_items'
-          },
-          {
-            type: 'doc',
-            docId: 'Sensor_Network',
-            position: 'left',
-            label: 'Network',
-            className: 'navbar_doc_items'
+            label: 'Sensor Network',
+            className: 'navbar_doc_items',
           },
           {
             type: 'doc',
             docId: 'Edge_Computing',
             position: 'left',
-            label: 'Edge',
-            className: 'navbar_doc_items'
+            label: 'Edge Computing',
+            className: 'navbar_doc_items',
           },
           {
             type: 'doc',
             docId: 'CloudnChain',
             position: 'left',
-            label: 'Cloud',
-            className: 'navbar_doc_items'
+            label: 'Cloud & Chain',
+            className: 'navbar_doc_items',
+          },
+          {
+            label: 'Contribution',
+            className: 'navbar_doc_items',
+            to: '/Contribution',
           },
           // {
           //   type: 'doc',
@@ -240,7 +231,7 @@ const config = {
             to: 'https://github.com/Seeed-Studio/wiki-documents',
             label: 'GitHub 💭',
             position: 'right',
-            className: 'navbar_doc_items'
+            className: 'navbar_doc_items',
           },
           // {
           //   type: 'localeDropdown',
@@ -272,7 +263,7 @@ const config = {
           // },
         ],
       },
-      hideOnScroll: true,
+
       footer: {
         style: 'dark',
         links: [
@@ -364,7 +355,8 @@ const config = {
               },
               {
                 label: 'Press',
-                to: 'https://www.seeedstudio.com/blog/2020/04/22/seeed-in-the-news/',
+                to:
+                  'https://www.seeedstudio.com/blog/2020/04/22/seeed-in-the-news/',
               },
             ],
           },
@@ -413,10 +405,7 @@ const config = {
         textColor: '#FFFFFF',
         isCloseable: false,
       },
-
     }),
+}
 
-
-};
-
-module.exports = config;
+module.exports = config
