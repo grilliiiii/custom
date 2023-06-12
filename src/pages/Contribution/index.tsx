@@ -3,13 +3,12 @@ import clsx from 'clsx'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Layout from '@theme/Layout'
 import Translate, { translate } from '@docusaurus/Translate'
-import docList from '../../define/IAGDocs.js'
-import styles from './styles.module.scss'
+import styles from './styles.module.css'
 import Link from '@docusaurus/Link'
-import { sortedUsers, Tags, TagList, type User, type TagType, Users } from './users'
+import { sortedUsers, Tags, TagList, type User, type TagType, Users } from '../../define/contribution'
 import { useHistory, useLocation } from '@docusaurus/router'
 import { useState, useMemo, useEffect } from 'react'
-import {sortBy} from './jsUtils';
+import {sortBy} from '../../utils/jsUtils';
 
 function ShowcaseHeader() {
 	return (
@@ -29,12 +28,12 @@ type UserState = {
 function ShowcaseFilters() {
 	return (
 		<section className={styles.filters}>
-			<div>
+			{/* <div>
 				<div className={styles.filters_header}>
 					<h2 as='h2'>Filters</h2>
 					<span className={styles.filters_number}>400 sites</span>
 				</div>
-			</div>
+			</div> */}
 			<ul>
 				{TagList.map((tag, i) => {
           const {label, description, color} = Tags[tag];
