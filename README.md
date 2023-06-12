@@ -14,4 +14,4 @@ You can [set up](https://wiki.seeedstudio.com/Deploy_Page_Locally) this platform
 
 You can also check the progress of your work [here](https://github.com/Seeed-Studio/wiki-documents/projects?query=is%3Aopen).
 
-mamimamihong
+mamimamihon
