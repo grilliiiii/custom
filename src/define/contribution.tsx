@@ -7,6 +7,7 @@
 
 /* eslint-disable global-require */
 
+
 import {translate} from '@docusaurus/Translate';
 import {sortBy} from '../utils/jsUtils';
 
@@ -103,50 +104,139 @@ export const Users: User[] = [
     source: 'https://github.com/algolia/docsearch/tree/main/packages/website',
     tags: ['favorite', 'opensource', 'product'],
   },
- 
-  
   {
-    title: 'Memgraph',
+    title: 'Apache APISIX',
     description:
-      'Memgraph is the platform for graph computation on streaming data',
-    preview: require('./showcase/memgraph.png'),
-    website: 'https://docs.memgraph.com/',
-    source: 'https://github.com/memgraph/docs',
-    tags: ['design', 'large', 'opensource', 'product', 'versioning'],
+      'A Dynamic, Real-Time, High-Performance Cloud-Native API Gateway',
+    preview: require('./showcase/apache-apisix.png'),
+    website: 'https://apisix.apache.org/',
+    source: 'https://github.com/apache/apisix-website',
+    tags: ['opensource', 'i18n', 'large'],
   },
   {
-    title: 'Meoo',
+    title: 'Apex FP',
+    description: 'Functional programming library for Salesforce Apex',
+    preview: require('./showcase/apexfp.png'),
+    website: 'https://www.apexfp.org',
+    source: 'https://github.com/ipavlic/apex-fp/tree/master/website',
+    tags: ['opensource'],
+  },
+  {
+    title: 'Astronomer',
     description:
-      'Personal website with blogs and notes, recording my study and life',
-    preview: require('./showcase/meoo.png'),
-    website: 'https://meoo.space',
-    source: 'https://github.com/cxOrz/meoo.space',
-    tags: ['opensource', 'personal'],
+      'Enterprise-grade framework for Apache Airflow. Production-ready Airflow environments with just a few clicks',
+    preview: require('./showcase/astronomer.png'),
+    website: 'https://docs.astronomer.io',
+    source: 'https://github.com/astronomer/docs',
+    tags: ['product', 'versioning', 'opensource'],
+  },
+]
+export const ContributionList=[
+  {
+    title:'Community Activity Attending',
+    describe:'Join/check our community events, unleash your talents and bring your ideas into reality with Seeed Studio.',
+    list:[
+      {
+        title: 'Perception System for SDG',
+        description: 'Come join the community activity and share your solution!',
+        preview: require('./showcase/agilets.png'),
+        website: 'https://agile-ts.org/',
+        source: 'https://github.com/orgs/Seeed-Studio/projects/4/views/1',
+        tags: ['opensource', 'design'],
+      },
+    ]
   },
   {
-    title: 'Metalyoung Blog',
-    description:
-      'A personal blog to record open source community contributions and open source projects',
-    preview: require('./showcase/metalyoung.png'),
-    website: 'https://www.metalyoung.com',
-    source: null,
-    tags: ['personal'],
+    title:'Product Ideas Launch Pad',
+    describe:'Accept our product application requirements, achieve them within the designated timeframe, and win your reward.',
+    list:[
+      {
+        title: 'XIAO ESP32C3 with Home Assistant',
+        description: 'Really need your help for applying XIAO ESP32C3 into Home Assistant',
+        preview: require('./showcase/agilets.png'),
+        website: 'https://wiki.seeedstudio.com/xiao-esp32c3-esphome/',
+        source: 'https://github.com/orgs/Seeed-Studio/projects/5/views/1?pane=issue&itemId=30468268',
+        tags: ['opensource', 'design'],
+      },
+      {
+        title: 'XIAO ESP32S3 with Home Assistant',
+        description: 'Really need your help for applying XIAO ESP32S3 into Home Assistant',
+        preview: require('./showcase/agilets.png'),
+        website: 'https://wiki.seeedstudio.com/xiao-esp32c3-esphome/',
+        source: 'https://github.com/orgs/Seeed-Studio/projects/5/views/1',
+        tags: ['opensource', 'design'],
+      },
+    ]
   },
   {
-    title: 'Metro',
-    description: 'The JavaScript bundler for React Native',
-    preview: require('./showcase/metro.png'),
-    website: 'https://facebook.github.io/metro/',
-    source: 'https://github.com/facebook/metro/tree/main/website',
-    tags: ['opensource', 'meta'],
+    title:'Knowledge Sharing in Wiki',
+    describe:'Share your knowledge with everyone on this open-source wiki platform, and submit through a "Pull Request" and receive your reward.',
+    list:[
+      {
+        title: '[Page Update] Arduino Intro',
+        description: 'We need an updated wiki page introducing Arduino',
+        preview: require('./showcase/agilets.png'),
+        website: 'https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30450213',
+        source: 'https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30450213',
+        tags: ['opensource', 'design'],
+      },
+      {
+        title: '[Page Add] Raspberry Pi Intro',
+        description: 'We need a new wiki page introducing Raspberry Pi',
+        preview: require('./showcase/agilets.png'),
+        website: 'https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30450213',
+        source: 'https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30450213',
+        tags: ['opensource', 'design'],
+      },
+      {
+        title: '[Bug Fix] Level 4 hyperlink bug',
+        description: 'Level 4 hyperlink titles cannot be displayed correctly',
+        preview: require('./showcase/agilets.png'),
+        website: 'https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30469734',
+        source: 'https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30469734',
+        tags: ['opensource', 'design'],
+      },
+      {
+        title: '[Function Add] PDF button',
+        description: 'Add a button at each page that automatically downloads the current page and converts it to PDF#302',
+        preview: require('./showcase/agilets.png'),
+        website: 'https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30469734',
+        source: 'https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30469767',
+        tags: ['opensource', 'design'],
+      },
+    ]
   },
-
-  /*
-  Pro Tip: add your site in alphabetical order.
-  Appending your site here (at the end) is more likely to produce Git conflicts.
-   */
-];
-
+  {
+    title:'Tech Support Team',
+    describe:'Utilize your skills to assist others in resolving their technical problems and receive your reward.',
+    list:[
+      {
+        title: 'Mr. Jefferson',
+        description: 'Global State and Logic Framework for reactive Applications',
+        preview: require('./showcase/agilets.png'),
+        website: 'https://agile-ts.org/',
+        source: 'https://github.com/orgs/Seeed-Studio/projects/7',
+        tags: ['personal'],
+      },
+      {
+        title: 'Mrs. Huang',
+        description: 'Local, reliable, fast and private Audio and IoT gate.',
+        preview: require('./showcase/aispeaker.png'),
+        website: 'https://ai-speaker.com/',
+        source: 'https://github.com/orgs/Seeed-Studio/projects/7',
+        tags: ['personal'],
+      },
+      {
+        title: 'Mr Liu',
+        description: 'Local, reliable, fast and private Audio and IoT gate.',
+        preview: require('./showcase/aispeaker.png'),
+        website: 'https://ai-speaker.com/',
+        source: 'https://github.com/orgs/Seeed-Studio/projects/7',
+        tags: ['personal'],
+      },
+    ]
+  },
+]
 export type User = {
   title: string;
   description: string;

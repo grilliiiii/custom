@@ -3157,7 +3157,19 @@ const sidebars = {
 
   ],
 
+  ContributionSidebar:[
+    'Contribution/Community_Activity_Attending/Community_Process_Intro',
 
+    {
+      
+              type: 'category',
+              label: 'Project Ideas Achievelment',
+              items: [
+                'Contribution/Project_idea/xiao-esp32c3-esphome'
+              ],
+    },
+  
+  ]
   // SenseCAPSidebar: [
   //   {
 

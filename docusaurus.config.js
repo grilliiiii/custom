@@ -205,14 +205,14 @@ const config = {
             type: 'doc',
             docId: 'Edge_Computing',
             position: 'left',
-            label: 'Edge Computing',
+            label: 'Edge',
             className: 'navbar_doc_items',
           },
           {
             type: 'doc',
             docId: 'CloudnChain',
             position: 'left',
-            label: 'Cloud & Chain',
+            label: 'Cloud',
             className: 'navbar_doc_items',
           },
           {
