@@ -34,6 +34,8 @@ jobs:
           cache: yarn
       - uses: webfactory/ssh-agent@v0.5.0
         with:
+          repository: MatthewJeffson/custom
+          ref: master
           ssh-private-key: ${{ secrets.WIKI_TOKEN }}
       - name: Deploy to GitHub Pages
         env:
