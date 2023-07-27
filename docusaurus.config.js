@@ -189,37 +189,37 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'Getting_Started',
+            docId: 'Contributor',
             position: 'left',
             label: 'Getting Started',
             className: 'navbar_doc_items',
           },
-          {
-            type: 'doc',
-            docId: 'Sensor_Network',
-            position: 'left',
-            label: 'Sensor Network',
-            className: 'navbar_doc_items',
-          },
-          {
-            type: 'doc',
-            docId: 'Edge_Computing',
-            position: 'left',
-            label: 'Edge',
-            className: 'navbar_doc_items',
-          },
-          {
-            type: 'doc',
-            docId: 'CloudnChain',
-            position: 'left',
-            label: 'Cloud',
-            className: 'navbar_doc_items',
-          },
-          {
-            label: 'Contribution',
-            className: 'navbar_doc_items',
-            to: '/Contribution',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'Sensor_Network',
+          //   position: 'left',
+          //   label: 'Sensor Network',
+          //   className: 'navbar_doc_items',
+          // },
+          // {
+          //   type: 'doc',
+          //   docId: 'Edge_Computing',
+          //   position: 'left',
+          //   label: 'Edge',
+          //   className: 'navbar_doc_items',
+          // },
+          // {
+          //   type: 'doc',
+          //   docId: 'CloudnChain',
+          //   position: 'left',
+          //   label: 'Cloud',
+          //   className: 'navbar_doc_items',
+          // },
+          // {
+          //   label: 'Contribution',
+          //   className: 'navbar_doc_items',
+          //   to: '/Contribution',
+          // },
           // {
           //   type: 'doc',
           //   docId: 'Solutions',
@@ -272,24 +272,9 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/Getting_Started',
+                to: '/Contributor',
               },
-              {
-                label: 'Sensor Network',
-                to: '/Sensor_Network',
-              },
-              {
-                label: 'Edge Computing',
-                to: '/Edge_Computing',
-              },
-              {
-                label: 'Cloud & Chain',
-                to: '/CloudnChain',
-              },
-              {
-                label: 'Solutions',
-                to: '/Solutions',
-              },
+
             ],
           },
           {
