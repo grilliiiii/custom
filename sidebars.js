@@ -22,7 +22,7 @@ const sidebars = {
 
   ProductSidebar: [
 
-    'XIAO_ESP32S3_Getting_Started',
+    'Contributor',
  
   ],
 
