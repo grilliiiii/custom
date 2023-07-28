@@ -22,7 +22,7 @@ const sidebars = {
 
   ProductSidebar: [
 
-    'Contributor',
+    'Getting_Started',
  
   ],
 
