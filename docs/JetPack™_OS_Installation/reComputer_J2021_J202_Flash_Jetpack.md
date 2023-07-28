@@ -325,7 +325,7 @@ If you can't get into the system in **Flashing to eMMC with command-line -- Step
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/35.jpg" /></div>
 
 :::note
-If more storage space is needed, we can use SD card to expand the capacity, or burn the system on SD card, you can refer to our recommended solution  [Flash System on SD card](/J101_Enable_SD_Card)
+If more storage space is needed, we can use SD card to expand the capacity, or burn the system on SD card, you can refer to our recommended solution  [Flash System on SD card](https://wiki.seeedstudio.com/reComputer_J1010_J101_Flash_Jetpack/)
 :::
 
 ## Tech Support & Product Discussion
